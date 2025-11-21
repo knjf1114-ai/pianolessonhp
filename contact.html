@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>お問い合わせ・体験申込｜〇〇ピアノ教室</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">♪</span><span class="logo-text">〇〇ピアノ教室</span></a>
+    <button class="nav-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="index.html">ホーム</a>
+      <a href="lessons.html">レッスン</a>
+      <a href="teachers.html">講師紹介</a>
+      <a href="access.html">アクセス</a>
+      <a href="contact.html" class="active nav-cta">体験申込</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>お問い合わせ・体験申込</h1>
+    <p>24時間受付。1〜2日以内にご連絡します。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-wrap">
+
+    <div class="contact-box">
+      <h2>フォームから送信</h2>
+
+      <!-- ※静的サイトなので送信先は無い。後でGoogleフォーム等に差し替え推奨 -->
+      <form class="contact-form" onsubmit="return fakeSubmit(event)">
+        <label>
+          お名前
+          <input type="text" name="name" required placeholder="例：山田 花子">
+        </label>
+
+        <label>
+          メールアドレス
+          <input type="email" name="email" required placeholder="example@gmail.com">
+        </label>
+
+        <label>
+          電話番号（任意）
+          <input type="tel" name="tel" placeholder="090-xxxx-xxxx">
+        </label>
+
+        <label>
+          ご希望の内容
+          <select name="type">
+            <option>無料体験レッスン</option>
+            <option>レッスンについて質問</option>
+            <option>その他</option>
+          </select>
+        </label>
+
+        <label>
+          メッセージ
+          <textarea name="message" rows="6" required placeholder="例：小2の子どもがピアノに興味を持ち始めました。体験希望です。"></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">送信</button>
+        <p class="hint">※送信ボタンはデモです。公開時は送信先を設定します。</p>
+      </form>
+    </div>
+
+    <div class="contact-box">
+      <h2>お電話・LINEでもOK</h2>
+      <p>
+        TEL：00-0000-0000<br>
+        受付：10:00〜20:00
+      </p>
+      <p class="hint">※LINE相談をやるならQR画像をここに置くと最強</p>
+      <div class="line-placeholder">LINE QR（差し替え）</div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-logo">〇〇ピアノ教室</div>
+      <p class="footer-text">〒000-0000 東京都〇〇区〇〇 1-2-3<br>TEL：00-0000-0000</p>
+    </div>
+    <div class="footer-links">
+      <a href="lessons.html">レッスン</a>
+      <a href="teachers.html">講師紹介</a>
+      <a href="access.html">アクセス</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 〇〇ピアノ教室 All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>
